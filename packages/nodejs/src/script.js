@@ -105,7 +105,7 @@ class Swap {
         IFRAME_HOST +
         '?' +
         qs.stringify({
-          options: btoa(
+          options: encodeURIComponent(
             JSON.stringify({
               sid,
               host: location.origin,
